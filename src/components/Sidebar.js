@@ -3,7 +3,7 @@ import { Drawer, List, ListItem, ListItemIcon, ListItemText, Divider } from '@mu
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ReportIcon from '@mui/icons-material/Report';
 
-const Sidebar = () => {
+const Sidebar = ({ iconColor }) => {
   return (
     <Drawer
       variant="permanent"
@@ -22,13 +22,13 @@ const Sidebar = () => {
       <List>
         <ListItem button>
           <ListItemIcon>
-            <DashboardIcon style={{ color: 'white' }} />
+            <DashboardIcon style={{ color: iconColor }} />
           </ListItemIcon>
           <ListItemText primary="Dashboard" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <ReportIcon style={{ color: 'white' }} />
+            <ReportIcon style={{ color: iconColor }} />
           </ListItemIcon>
           <ListItemText primary="Reports" />
         </ListItem>
