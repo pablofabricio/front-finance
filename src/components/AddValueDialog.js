@@ -11,9 +11,6 @@ const AddValueDialog = ({ open, onClose, onChange, onSubmit, value, categories }
     <Dialog open={open} onClose={onClose}>
       <DialogTitle>Add Value</DialogTitle>
       <DialogContent>
-        <DialogContentText>
-          Please enter the details for the new value.
-        </DialogContentText>
         <TextField
           autoFocus
           margin="dense"
@@ -112,20 +109,6 @@ const AddValueDialog = ({ open, onClose, onChange, onSubmit, value, categories }
               InputProps={{
                 style: {
                   borderColor: value.start_date ? 'rgb(37, 138, 37)' : undefined,
-                },
-              }}
-            />
-            <TextField
-              margin="dense"
-              name="due_day"
-              label="Due Day"
-              type="text"
-              fullWidth
-              value={value.due_day}
-              onChange={onChange}
-              InputProps={{
-                style: {
-                  borderColor: value.due_day ? 'rgb(37, 138, 37)' : undefined,
                 },
               }}
             />
